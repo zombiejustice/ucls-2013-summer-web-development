@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Summer Lab Web | Log In</title>
+<style>
+body {
+	background-color: #000000;
+	color: #ccccff;
+	font-family: "Courier New", monospace;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1;
+}
+
+</style>
+</head>
+<body>
+<?php
+
+if (array_key_exists('user', $_POST) && array_key_exists('password', $_POST)){
+	
+	$query = "SELECT * FROM password_table WHERE user='" . $_POST['user'] . "';";
+
+	include '../password-connect.php';
+	
+	$results = mysql_fetch_array(mysql_query($query));
+
+	if ($_POST['password'] == $results['password']) {
+		echo "<h1>" . $results['greeting'] . "</h1>";
+	}
+	else {
+		echo "<h1>Incorrect Password</h1>";
+
+	}
+}
+else {
+echo <<<EOD
+
+<h1>Please enter your username and password:</h1>
+<form method='post' action='betterlogin.html'>
+User: <input type='text' name='user' /><br />
+Pwrd: <input type='password' name='password' /><br />
+<input type='submit' value='log in' />
+</form>
+EOD;
+}
+?>
+
+</body>
+</html>

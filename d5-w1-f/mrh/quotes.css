@@ -1,0 +1,30 @@
+body {
+
+	width: 400px;
+	margin: 0 auto;
+	border-left: 20px solid #000000;
+	border-right: 20px solid #000000;
+	border-bottom: 20px solid #000000;
+	border-radius: 0 0 20px 20px;
+	color: #000000;
+	background-color: #ffffcc;
+	padding: 20px;
+	}
+	
+h1, h3 {
+	text-align: center;
+	font-weight: normal;
+	font-style: italic;
+	font-family: sans-serif;
+	}
+	
+.quote {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+form, input {
+display: inline;
+//width: 200px;
+//padding: 0;
+//margin: 5px auto;
+}

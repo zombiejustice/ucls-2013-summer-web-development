@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Summer Lab Web | Log In</title>
+<style>
+body {
+	background-color: #000000;
+	color: #ccccff;
+	font-family: "Courier New", monospace;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1;
+}
+
+</style>
+</head>
+<body>
+<?php
+
+if ( 0/*CHECK IF WE ARE LOGGING IN*/){
+	
+	//QUERY HERE
+	
+	include '../password-connect.php';
+	
+	//GET THE RESULTS
+	
+	if (0/* DO PASSWORDS MATCH */) {
+	
+		//PRINT OUT GREETING
+	
+	}
+	else {
+	
+		echo "<h1>Incorrect Password</h1>";
+
+	}
+}
+else {
+
+	echo <<<EOD
+
+<h1>Please enter your username and password:</h1>
+<form method='get' action='login.html'>
+User: <input type='text' name='user' /><br />
+Pwrd: <input type='text' name='password' /><br />
+<input type='submit' value='log in' />
+</form>
+EOD;
+}
+?>
+
+</body>
+</html>

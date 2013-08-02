@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Best Quotes Ever</title>
+<link type='text/css' rel='stylesheet' href='quotes.css' />
+</head>
+<body>
+
+<?php
+
+$quotenum = $_GET['num'];
+
+$quotemasterlist = array();
+
+include '../students.php';
+
+foreach ($students as $key => $value) {
+
+	if (file_exists("../$value/quotes.php")){
+		include "../$value/quotes.php";
+	}
+
+	$quotemasterlist = array_merge($quotemasterlist, $quotelist);
+
+}
+
+if ($quotenum == '') {
+	$quotenum = 0;
+}
+
+if ($quotenum >= count($quotemasterlist)) {
+	$quotenum = 0;
+}
+
+?>
+<h1>Best Quotes Ever</h1>
+<h3>Summer Lab Web's favorite quotes</h3>
+
+
+<form method='get' action='quotes.html'>
+<input type='hidden' name='num' value='<?php echo $quotenum +1; ?>' />
+<input type='submit' value='Next Quote' />
+</form>
+
+<form method='get' action='quotes.html'>
+<input type='hidden' name='num' value='<?php echo rand(0, count($quotemasterlist)); ?>' />
+<input type='submit' value='Random Quote' />
+</form>
+
+<p class='quote'><?php echo $quotemasterlist[$quotenum] ?></p>
+
+<h3>All quotes:</h3>
+
+<?php
+
+foreach($quotemasterlist as $key => $value) {
+
+	echo "<p class='quote'>$value</p>";
+
+}
+
+?>
+
+</body>
+</html>

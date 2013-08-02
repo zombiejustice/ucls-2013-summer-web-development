@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Mudpuppies!</title>
+<?php include '../../mudpuppy/mudpuppy-connect.php'; ?>
+<script type='text/javascript' src='../../mudpuppy/mudpuppy-scripts.js'></script>
+
+</head>
+<body onLoad='startClock()'>
+
+<h1>Mudpuppies</h1>
+
+<input type='button' value='feed' onClick='feed()' />
+<input type='button' value='play' onClick='play()' />
+<input type='button' value='save game' onClick='saveGame()' />
+<br /><img id='pupimg' src='/mudpuppy/images/default.gif' />
+<div id='puphere'><p>Ready to play?</p></div>
+
+
+
+</body>
+</html>

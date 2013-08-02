@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Best Quotes Ever</title>
+<link type='text/css' rel='stylesheet' href='quotes.css' />
+</head>
+<body>
+
+<?php
+
+$quotenum = $_GET['num'] +1;
+
+include 'quotes.php';
+
+
+?>
+<h1>Best Quotes Ever</h1>
+<h3>Mr. H's favorite "real talk" quotes</h3>
+
+
+<form method='get' action='quotes.html'>
+<input type='hidden' name='num' value='<?php echo $quotenum; ?>' />
+<input type='submit' value='Next Quote' />
+</form>
+
+
+
+<p class='quote'><?php echo $quotelist[$quotenum-1] ?></p>
+
+
+
+</body>
+</html>

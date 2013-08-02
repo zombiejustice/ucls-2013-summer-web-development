@@ -1,0 +1,20 @@
+body {
+
+	background-color: #333333;
+	color: #cccccc;
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px;
+
+}
+
+input, textarea {
+
+	background-color: #666666;
+	color: #ffffff;
+
+}
+
+a:link, a:visited, a:active {
+	color: #999999;
+}

@@ -1,0 +1,87 @@
+Monday, Week One:
+    Set-up:     students.php with user names, student accounts on server
+    Part one:   Class rules, introductions as necessary
+                Quick review of html and css structure
+    Assignment: CSS Garden
+                emphasize specific location, separation of structure
+                and presentation, looking up things online, workflow
+    Part two:   Work time
+    
+Tuesday:
+    Set-up:     Have skeleton and completed example pages
+    Part one:   review connecting to server
+    			?php escape, $_GET and URL key/values
+    Assignment: User-Customized Website
+                Forms, $_GET[], hopping in and out of php
+    Part two:   Form elements (radio, submit, and text)
+    
+Wednesday:
+    Set-up:		Have example Mad Lib
+    Part one:	review forms, $_GET[], php
+    Assignment: Mad Libs
+    			variables, forms, $_GET[], php enter/exit
+    Part two:	variables, form styling
+
+Thursday:
+	Set-up:		Have example navbar
+	Part one:	Finish Mad Libs, play them
+	Part two:	include
+	Assignment: Navigation Bar
+				include, modular code
+
+Friday:
+    Set-up:		Have example quote wall page
+    Part one:	lists, hidden form fields, arithmetic
+    Assignment: Quote Wall
+                lists, basically, and include 
+    Part two:   work time
+    
+NB from 2012: Consider shifting array lesson earlier and covering for loops
+    earlier, separate from SQL. Show $students array as an example?
+    Possibly tie in with include / navigation by having various pages
+    in array to put in menu. Also: \n & \r
+
+Monday, Week Two:
+	Part one: count(), if(){}, random()
+	Assignment update:
+		make quotes loop, add random button
+	Part two: foreach(){}, array_merge(), file_exists
+	Assignment update:
+		print out all quotes, include someone else's quotes
+		
+Tuesday, Week Two:
+	Set up: have password database, populate it
+	Part one: what is a database?
+				forming a query, mysql_query, SELECT, WHERE
+				reading results, mysql_fetch_array
+	Assignment: Password prompt / message
+	Part two: $_POST, password field			
+	End of class: Brainstorm / what do we want to learn
+	
+What does Mr. H want to cover? 
+	Database design
+	database usage
+	Adventure project
+	Tamagotchi
+
+The following reconstructed from memory, sorry:	
+	
+Wednesday, Week Two:
+	Choose your own adventure project
+	
+Thursday, Week Two:
+	Add more choices / hiding unused choices
+	
+Monday, Week Three:
+	Quiz Project
+	Intro to Javascript, calling a function
+	Then a function that takes a variable
+	
+Tuesday Mr. H was sick, Maddie did a quiz
+
+Wednesday / Thursday:
+	Mudpuppies! Uh, this'll need some work next year.
+	
+Things we didn't do but wanted to:
+	Comment Pages
+	Image gallery
